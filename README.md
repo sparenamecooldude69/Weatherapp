@@ -67,7 +67,3 @@ Feel free to contribute! Fork the repository, make your changes, and create a pu
 
 License
 This project is licensed under the MIT License.
-
-Contact
-For any questions or feedback, feel free to reach out:
-📧 Email: your-email@example.com
