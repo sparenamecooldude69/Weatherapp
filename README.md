@@ -40,16 +40,6 @@ Copy code
 const apiKey = "your_api_key_here";
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?units=metric&q=";
 
-async function checkWeather(city) {
-    try {
-        const response = await fetch(apiURL + city + `&appid=${apiKey}`);
-        if (!response.ok) throw new Error("City not found");
-        const data = await response.json();
-        updateUI(data);
-    } catch (error) {
-        console.error(error.message);
-    }
-}
 API Setup
 Visit the OpenWeather website and create a free account.
 Get your API key from the dashboard.
