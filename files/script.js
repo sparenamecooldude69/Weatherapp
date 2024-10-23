@@ -10,7 +10,7 @@ async function checkWeather(city) {
         document.querySelector(".weather").style.display = "none";
         return;
     }
-    
+
     const response = await fetch(apiURL + city + `&appid=${apiKey}`);
     if (response.status == 404) {
         document.querySelector(".error").style.display = "block";
@@ -39,6 +39,12 @@ async function checkWeather(city) {
                 break;
             case "Mist":
                 weatherIcon.src = "mist.png";
+                break;
+            case "Haze":
+                weatherIcon.src = "haze.png";
+                break;
+            case "Snow":
+                weatherIcon.src = "snow.png";
                 break;
             default:
                 weatherIcon.src = "default.png";
